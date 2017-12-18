@@ -1,0 +1,40 @@
+ul,li,dl,dd,dt,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,img,body,p{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  font-size: 14px;
+
+}
+*{
+  font-family: "Microsoft YaHei"!important;
+}
+body{
+  font-size: 12px;
+  background: #f5f5f5;
+}
+input,textarea,select{
+  outline: none;
+}
+@mixin text_overflow(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin mask($color:rgba(0,0,0,0.8),$index:0){
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  margin: auto;
+  background: $color;
+  z-index: $index;
+}
+$color:#4CB7FF;

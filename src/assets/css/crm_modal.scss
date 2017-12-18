@@ -1,0 +1,360 @@
+@import "base";
+.crm-modal-mask{
+  @include mask(rgba(0,0,0,0.6),100000);
+}
+.crm-modal-box{
+  @include mask(#fff,100000);
+  width: 400px;
+  height: 260px;
+}
+.crm-modal-title{
+  height: 50px;
+  line-height: 50px;
+  background: #f2f3f5;
+  span:nth-of-type(1){
+    float: left;
+    padding-left: 20px;
+    color: #252F4A;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  span:nth-of-type(2){
+    float: right;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    transform: rotate(45deg);
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+  }
+}
+.crm-modal-foot{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  height: 50px;
+  padding: 10px 20px;
+  border-top: 1px solid #f0f1f2;
+  text-align: right;
+  box-sizing: border-box;
+  input{
+    margin-left: 10px;
+    background:#ffffff;
+    border:1px solid #dbdcdf;
+    border-radius:3px;
+    width:68px;
+    height:28px;
+    font-size: 12px;
+    color: #666;
+  }
+  .crm-modal-input-color{
+    background: #48adff!important;
+    border-color: #48adff!important;
+    color: #fff!important;
+  }
+  .crm-modal-input-success[type=button],.crm-modal-input-error[type=button]{
+    margin-left: 10px;
+    background:#ffffff;
+    border:1px solid #dbdcdf;
+    border-radius:3px;
+    width:68px;
+    height:28px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+  }
+}
+.crm-modal-inner{
+  padding:20px 20px 0 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:50px;
+  bottom: 50px;
+  overflow-y:auto;
+}
+.modal-inner-color{
+  background:#e4f0ff;
+  border:1px solid #48adff;
+  color: #48adff;
+}
+.crm-modal-ppt-inner{
+  padding:0 20px 20px 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:100px;
+  bottom: 50px;
+  overflow-y:auto;
+}
+.crm-modal-count{
+  float: left;
+  color: #f00;
+  cursor: pointer;
+}
+.crm-modal-table{
+  border-collapse: collapse;
+  width: 100%;
+  border:1px solid #ccc;
+  table-layout: fixed;
+  thead{
+    >tr{
+      >td{
+        text-align: left;
+        padding-left: 10px;
+        line-height: 30px;
+        border:1px solid #ccc;
+      }
+      >th{
+        text-align: left;
+        padding-left: 10px;
+        line-height: 30px;
+        border:1px solid #ccc;
+      }
+      >th:nth-of-type(1){
+        text-align: center;
+        padding-left: 0;
+        width: 50px;
+      }
+      >th:nth-of-type(2){
+        width: 200px;
+      }
+      >th:nth-of-type(3){
+        width: 87px;
+      }
+    }
+  }
+  tbody{
+    >tr{
+      border-bottom:1px solid #ccc;
+      >td{
+        text-align: left;
+        padding-left: 10px;
+        line-height: 30px;
+        border:1px solid #ccc;
+      }
+      >td:nth-of-type(1){
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+  }
+  input{
+    margin: 0;
+    height: 28px;
+    vertical-align: middle;
+  }
+}
+.crm-modal-form{
+  height: 40px;
+  padding: 0 20px;
+  input{
+    background: #fff;
+    border:1px solid #ccc;
+    vertical-align: middle;
+    height: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+  }
+  input[type=text]{
+    float: left;
+    padding-left: 5px;
+    width: 280px;
+  }
+  input[type=button]
+  {
+    float: right;
+    padding: 0 20px;
+  }
+}
+.crm-modal-download{
+  padding:30px 30px  40px 30px;
+  >img{
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  >a{
+    width: 143px;
+    border:2px solid #333;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #0a1534;
+    background: #fff;
+    margin-top: 28px;
+    float: right;
+    text-align: center;
+  }
+}
+.crm-modal-enter{
+  height: auto;
+  overflow: hidden;
+  li{
+    float: left;
+    padding: 0 30px;
+    border-left: 1px solid #eee;
+    line-height: 30px;
+    min-height: 260px;
+  }
+  li:nth-of-type(1){
+    padding-left: 0;
+    border:none;
+  }
+  input{
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  span{
+    float: left;
+  }
+}
+.crm-modal-ticket{
+  line-height: 30px;
+  text-align: left!important;
+  color: #666;
+  span:nth-of-type(1){
+    color: #f00;
+    margin-right: 10px;
+  }
+  span:nth-of-type(2){
+    margin-right: 10px;
+  }
+  span:nth-of-type(3){
+    float: right;
+  }
+}
+.crm-modal-input{
+  overflow: hidden;
+  h3{
+    height: 30px;
+    line-height: 30px;
+    background: #f1f7ff;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+
+  }
+}
+.crm-modal-input-one{
+  width: 50%;
+  line-height: 30px;
+  float: left;
+  label{
+    width: 24%;
+    text-align: right;
+    float: left;
+    color: #333;
+  }
+  input,select{
+    float: left;
+    height: 30px;
+    width: 72%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    padding-left: 5px;
+  }
+  .crm-modal-input-msg{
+    width: 100%;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20%;
+    font-size: 12px;
+    color: #f00;
+  }
+}
+.crm-modal-input-two{
+  width: 100%;
+  line-height: 30px;
+  float: left;
+  label{
+    width: 12%;
+    text-align: right;
+    float: left;
+    color: #333;
+  }
+  input,select{
+    float: left;
+    height: 30px;
+    width: 86%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    padding-left: 5px;
+  }
+  textarea{
+    height: 100px;
+    resize: none;
+    float: left;
+    width: 86%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    padding-left: 5px;
+  }
+  .crm-modal-input-msg{
+    width: 100%;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10%;
+    font-size: 12px;
+    color: #f00;
+  }
+  font{
+    color: #f00;
+    font-size: 12px;
+  }
+}
+
+.crm-modal-input-three{
+  width: 100%;
+  line-height: 30px;
+  float: left;
+  label{
+    width: 24%;
+    text-align: right;
+    float: left;
+    color: #333;
+  }
+  input,select{
+    float: left;
+    height: 30px;
+    width: 64%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    padding-left: 5px;
+  }
+  textarea{
+    height: 100px;
+    resize: none;
+    float: left;
+    width: 64%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    padding-left: 5px;
+  }
+  .crm-modal-input-msg{
+    width: 100%;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 24%;
+    font-size: 12px;
+    color: #f00;
+  }
+  font{
+    color: #f00;
+    font-size: 12px;
+  }
+}
