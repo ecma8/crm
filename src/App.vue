@@ -15,6 +15,7 @@
         },
         computed: {
             ...mapGetters(['isLoading'])
+            
         },
         components:{
 
