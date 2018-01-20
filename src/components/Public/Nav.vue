@@ -1,15 +1,20 @@
 <template>
 	<div class="nav-list">
-		<div v-for="(item,index) in list">
-			<h5 @click="num=index">{{item.title}}</h5>
-			<ul>
-				<li v-for="(items,indexs) in item.routerList">
-					<router-link :to="{name:items.router}">
-						{{items.name}}
-					</router-link>
-				</li>
-			</ul>
-		</div>
+		<!--<div v-for="(item,index) in list">-->
+			<!--<h5 @click="num=index">{{item.title}}</h5>-->
+			<!--<ul>-->
+				<!--<li v-for="(items,indexs) in item.routerList">-->
+					<!--<router-link :to="{name:items.router}">-->
+						<!--{{items.name}}-->
+					<!--</router-link>-->
+				<!--</li>-->
+			<!--</ul>-->
+		<!--</div>-->
+		<ul>
+			<li v-for="(item,index) in 10">
+				<router-link :to="{name:'page_'+(index+1)}">{{index}}</router-link>
+			</li>
+		</ul>
 	</div>
 </template>
 <script>
@@ -84,7 +89,8 @@
 	}
 </script>
 <style scoped="">
-	.color{
-		background: #0a1534;
+	.router-link-exact-active.router-link-active{
+		background: #4c99ff;
+		color: #fff;
 	}
 </style>
